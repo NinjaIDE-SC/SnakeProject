@@ -7,7 +7,7 @@ import demo.java.cell.CellType;
 
 public class Snake {
 
-    private final LinkedList<Cell> body;
+    private final LinkedList<Cell> body; // snake body
 
     public Snake(Cell cell) {
         body = new LinkedList<Cell>();
@@ -27,7 +27,7 @@ public class Snake {
     }
  
     public void bodyGrows() { 
-        body.addLast(body.getLast()); 
+        body.addLast(body.getLast());
     }
  
     public void bodyMoves(Cell nextcell) {
