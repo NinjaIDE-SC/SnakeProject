@@ -55,6 +55,7 @@ public class SnakeCellBoard extends CellBoard {
             // we can find a new foodcell
             nextfood = setRandomFood();
         }
+        // set the new foodcell
         food.setCellType(CellType.VOID);
         food = nextfood;
     }
@@ -62,7 +63,7 @@ public class SnakeCellBoard extends CellBoard {
     public int snakeGame(Direction direction) throws SnakeException {
         this.direction = direction;
 
-        // two choices: move or stop
+        // two choices: to move or to stop, that's the dilemma!
         if(direction == Direction.none) { // snake stops
 
             // snake takes a pause
