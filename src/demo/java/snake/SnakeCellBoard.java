@@ -47,11 +47,11 @@ public class SnakeCellBoard extends CellBoard {
     public void setNewRandomFood() throws SnakeException {
         Cell nextfood;
         if ((getSize() - 1) <= getSnakeSize()) { 
-            // the snake is bigger than the board
+            // snake is bigger than the board
             // we cannot find a new foodcell
             nextfood = null;
         } else {
-            // the snake is smaller than the board
+            // snake is smaller than the board
             // we can find a new foodcell
             nextfood = setRandomFood();
         }
@@ -79,7 +79,7 @@ public class SnakeCellBoard extends CellBoard {
             // get the CellType of the nextcell...
             CellType nextcellCellType;
             if(nextcell == null) {
-                nextcellCellType = CellType.WALL; // nextcell is a out-of-bounds-cell
+                nextcellCellType = CellType.WALL; // nextcell is a out-of-bounds
             } else {
                 nextcellCellType = nextcell.getCellType();
             }
@@ -196,4 +196,3 @@ public class SnakeCellBoard extends CellBoard {
     }
 
 }
-
