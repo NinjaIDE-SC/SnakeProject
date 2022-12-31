@@ -11,7 +11,7 @@ Hello, this is simple snake game in Java.
 - if you lose or win, close and re-open it.
 
 Thank you for playing... if there are some issues or you want to make so remarks, 
-fell free to contact me.
+fell free to contact me. I'm not a pro!
 
 ## My Contact:
 If you want to contact me, this is my email address: stefano98casagrande@gmail.com
